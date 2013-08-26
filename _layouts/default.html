@@ -1,42 +1,33 @@
 <!DOCTYPE html>
-<html>
-		<head>
-				<meta charset="utf-8" />
-				<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-				<title>{{ page.title }}</title>
-				<meta name="viewport" content="width=device-width" />
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>{{ page.title }}</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width" />
 
-				<link rel="stylesheet" href="/css/styles.css" />
+		<link rel="stylesheet" href="/css/styles.css" />
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body>
 
-		</head>
-		<body>
+		<div class="layoutWrapper">
+			{% include site-header.html %}
 
-				<div class="container">
-					<div class="site">
-						<div class="header">
-							<h1 class="title"><a href="/">{{ site.name }}</a></h1>
-							<a class="extra" href="/">home</a>
-						</div>
+			{% include primary-nav.html %}
 
-								{{ content }}
+			<div class="layoutMain">
+				<div class="contentWrapper">
+					{{ content }}
+				</div>
+			</div>
 
-						<div class="footer">
-							<div class="contact">
-								<p>
-									Your Name<br />
-									What You Are<br />
-									your@email.com
-								</p>
-							</div>
-							<div class="contact">
-								<p>
-									<a href="http://github.com/yourusername/">github.com/yourusername</a><br />
-									<a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
-								</p>
-							</div>
-						</div>
-					</div>
-				</div> <!-- /container -->
+			{% include site-footer.html %}
+		</div>
 
-		</body>
+	</body>
 </html>

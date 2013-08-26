@@ -1,0 +1,125 @@
+/**
+ * @description    Colour palette
+ *
+ *      @author    Kristina Auckland <Kristina.Auckland@bss.org>
+ *     @version    0.1
+ *        @date    2013-05-14 09:57
+ *
+ *
+ *     @example
+ *
+ *
+ *        @type    variables
+ *       @notes    All of the colours have been taken from the BSS Coporate Identity Style guide
+ *      @ignore
+ *
+ */
+
+/**
+* @section        Base colours
+*/
+$color-black:             #000;
+$color-white:             #fff;
+
+/**
+* @section        Corporate colours
+*/
+$color-brand-red  :             #c41200; // BSS Red
+$color-brand-gray :             #939598; // BSS Cool Gray 8
+
+/**
+* @section        Colour red
+*/
+$color-brand-fire-engine-red:             #dc241a; // BSS Fire Engine Red
+
+/**
+* @section        Colour green
+*/
+$color-brand-green        :             #314900; // BSS Green
+$color-brand-dingley-green:             #667d3b; // BSS Dingley Green
+$color-brand-citrus-green :             #aec704; // BSS Citrus Green
+
+/**
+* @section        Colour blue
+*/
+$color-brand-regal-blue      :             #1c355e; // BSS Regal Blue
+$color-brand-summery-sky-blue:             #1a95dc; // BSS Summer Sky Blue
+
+/**
+* @section        Colour Pink
+*/
+$color-brand-pink:             #e0007c; // BSS Hollywood Cerise Pink
+
+/**
+* @section        Colour Yellow
+*/
+$color-brand-pesto-yellow:             #7f6e2c; // BSS Pesto Yellow
+$color-brand-broom-yellow:             #edd914; // BSS Broom Yellow
+
+/**
+* @section        Colour Neutral
+*/
+$color-brand-cool-gray-11:             #54565b; // BSS Cool Gray 11
+$color-brand-cool-gray-8 :             #898b8e; // BSS Cool Gray 8
+$color-brand-cool-gray-4 :             #bcbcbc; // BSS Cool Gray 4
+
+/**
+* @section        Colour
+*/
+$color-brand-blue     :             #006f9d; // Allports - http://chir.ag/projects/name-that-color/#006F9D
+$color-brand-dark-blue:             #0d182c; // Firefly - http://chir.ag/projects/name-that-color/#0D182C
+$color-twitter        :             #02aced; // https://twitter.com/logo
+$color-facebook       :             #3b5998; //
+$color-linkedin       :             #4875b4; // http://developer.linkedin.com/documents/branding-guidelines
+
+
+/**
+* @section        Colour complementary
+*/
+$color-brand-complementary1:    #dfcdb4;
+$color-brand-complementary2:    #fbeed3;
+
+/**
+* @section        Colour
+*/
+$color-copy              :    lighten($color-black, 34.5%); // output = #585858
+$color-link              :    $color-brand-fire-engine-red;
+$color-page-bg           :    lighten($color-black, 20.5%); // output = #343434
+$color-global-header     :    lighten($color-black, 23%); // output = #3b3b3b
+$color-global-nav        :    darken($color-white, 4.75%); // output = #f3f3f3
+$color-site-header       :    darken($color-white, 4.75%); // output = #f3f3f3
+$color-site-menu         :    lighten($color-black, 23%); // output = #3b3b3b
+$color-content-wrapper   :    darken($color-white, 8%); // output = #ebebeb
+$color-panel-bg          :    darken($color-white, 2.75%); // output = #f8f8f8
+$color-layout-main       :    $color-white;
+$color-layout-footer     :    $color-brand-blue;
+$color-footer-copy       :    darken($color-white, 10.5%); // output = #e4e4e4
+$color-footer-messaging  :    darken($color-brand-blue, 2%); // output = #00638d
+$color-content-main      :    $color-white;
+$color-content           :    $color-white;
+$color-nav-primary       :    lighten($color-black, 44.5%); // output = #717171
+$color-nav-primary-active:    darken($color-white, 17.25%); // output = #d3d3d3
+$color-author-detail     :    $color-brand-dingley-green;
+$color-quote             :    $color-brand-dingley-green;
+$color-quote-by          :    $color-brand-green;
+$color-tag-border        :    darken($color-white, 25%); // output = #c0c0c0
+$color-teaser-bg         :    darken($color-white, 4.75%); // output = #f3f3f3
+$color-stub-bg           :    $color-white;
+$color-tag               :    $color-brand-dingley-green;
+$color-nav-filter-active :    lighten($color-black, 34.5%); // output = #585858
+$color-nav-filter-border :    darken($color-white, 13%); // output = #dedede
+$color-dash              :    $color-brand-broom-yellow;
+$color-form-bg           :    darken($color-white, 4.75%); // output = #f3f3f3
+$color-form-input        :    darken($color-white, 10.5%); // output = #e4e4e4
+$color-form-field-success:    $color-brand-dingley-green;
+$color-form-field-error  :    $color-brand-fire-engine-red;
+
+$color-button            :    $color-brand-red;
+$color-related           :    darken($color-white, 13%); // output = #dedede
+$color-related-tags      :    $color-brand-dingley-green;
+$color-related-websites  :    $color-brand-red;
+$color-border            :    lighten($color-black, 83%);
+$color-shadow            :    lighten($color-black, 30%);
+$color-drop-shadow       :    darken($color-white, 13%); // output = #dedede
+$color-mark              :    $color-brand-complementary2;
+$color-selection         :    $color-brand-complementary2;

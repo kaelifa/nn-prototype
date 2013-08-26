@@ -5,5 +5,247 @@
  *             @author    Kristina Auckland <kristina.auckland@gmail.com>
  *            @version    0.1
  *               @date    2013-08-18 18:10
+ *              @notes    NB. This is the master Sass file which imports all the partials.
+ *                        No CSS should be written in this file.
  */
-/** @section     Compass */
+/* Please be aware that styles.css is a generated file and has been built using SCSS */
+/**
+ * @section        Compass
+ *   @notes        http://compass-style.org/install/
+ *                 $ sudo gem update --system
+ *                 $ sudo gem install compass
+ */
+/**
+ * @section        Susy Grid
+ *   @notes        http://susy.oddbird.net/guides/
+ *                 $ sudo gem install susy
+ */
+/**
+ * @section        Sassy buttons
+ *   @notes        http://jaredhardy.com/sassy-buttons/
+ *                 $ sudo gem install modular-scale
+ */
+/**
+ * @section        Settings
+ */
+/**
+ * @description    Susy Settings - Set up your default grid values: total columns, column width, and gutter width.
+ *
+ *      @author    http://susy.oddbird.net/
+ *     @version    0.1
+ *        @date    2013-08-26 17:57
+ *
+ *     @example
+ *
+ *        @type    settings
+ *       @notes    The breakpoint variables use colour coding. The .globalHeader class has debgging which
+ *                 can be enabled to view the matching colours in the background of the .globalHeader in
+ *                 the front end.
+ *      @ignore
+ *
+ */
+/**
+ * @section        settings
+ *   @notes        default size 0px - 576px
+ */
+/**
+ * @section        736 - PURPLE
+ *   @notes        (min-width: 321px) and (max-width: 480px)
+ */
+/**
+ * @section        736 - RED
+ *   @notes        (min-width: 576px) and (max-width: 736px)
+ */
+/**
+ * @section        736 - PINK
+ *   @notes        (min-width: 576px)
+ */
+/**
+ * @section        816 - BLUE
+ *   @notes        (min-width: 736px) and (max-width: 816px)
+ */
+/**
+ * @section        816 - YELLOW
+ *   @notes        (max-width: 816px)
+ */
+/**
+ * @section        976 - GREEN
+ *   @notes        (min-width: 816px)
+ */
+/**
+ * @section        Variables
+ */
+/**
+ * @description    Colour palette
+ *
+ *      @author    Kristina Auckland <Kristina.Auckland@bss.org>
+ *     @version    0.1
+ *        @date    2013-05-14 09:57
+ *
+ *
+ *     @example
+ *
+ *
+ *        @type    variables
+ *       @notes    All of the colours have been taken from the BSS Coporate Identity Style guide
+ *      @ignore
+ *
+ */
+/**
+* @section        Base colours
+*/
+/**
+* @section        Corporate colours
+*/
+/**
+* @section        Colour red
+*/
+/**
+* @section        Colour green
+*/
+/**
+* @section        Colour blue
+*/
+/**
+* @section        Colour Pink
+*/
+/**
+* @section        Colour Yellow
+*/
+/**
+* @section        Colour Neutral
+*/
+/**
+* @section        Colour
+*/
+/**
+* @section        Colour complementary
+*/
+/**
+* @section        Colour
+*/
+/**
+ * @section        Mixins
+ */
+/**
+ * @section        Global
+ */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/**
+ * @section        Elements
+ */
+/**
+ * @section        Navigation
+ */
+/**
+ * @section        Modules
+ */
+/**
+ * @description    styling for the formField class
+ *
+ *      @author    Kristina Auckland <kristina.auckland@gmail.com>
+ *     @version    0.1
+ *        @date    2013-08-26 17:48
+ *
+ *
+ *     @example
+ *                 <fieldset class="formField">
+ *
+ *                 </fieldset>
+ *
+ *
+ *        @type    module
+ *       @notes
+ */
+/**
+ * @section        formField
+ */
+.formField {
+  border: none;
+}
+
+/**
+ * @description    styling for the formFieldLabel class
+ *
+ *      @author    Kristina Auckland <kristina.auckland@gmail.com>
+ *     @version    0.1
+ *        @date    2013-08-26 17:48
+ *
+ *
+ *     @example
+ *                 <fieldset class="formField">
+ *                      <label class="formFieldLabel" for="quickEnquiry_message">How can we help you (optional)</label>
+ *                 </fieldset>
+ *
+ *
+ *        @type    module
+ *       @notes
+ */
+/**
+ * @section        formFieldLabel
+ */
+/**
+ * @description    styling for the formInput class
+ *
+ *      @author    Kristina Auckland <kristina.auckland@gmail.com>
+ *     @version    0.1
+ *        @date    2013-08-26 17:48
+ *
+ *
+ *     @example
+ *                 <fieldset class="formInput">
+ *
+ *                 </fieldset>
+ *
+ *
+ *        @type    module
+ *       @notes
+ */
+/**
+ * @section        formInput
+ */
+/**
+ * @description    styling for the favouriteName class
+ *
+ *      @author    Kristina Auckland <kristina.auckland@gmail.com>
+ *     @version    0.1
+ *        @date    2013-08-26 17:48
+ *
+ *
+ *     @example
+ *                 <fieldset class="formField formInput formText favouriteName">
+ *                      <label class="formFieldLabel" for="favouriteNames_name_01">Name</label>
+ *                      <input type="email" name="favouriteNames_name_01" value="Anna" id="favouriteNames_name_01" />
+ *                 </fieldset>
+ *
+ *
+ *        @type    module
+ *       @notes
+ */
+/**
+ * @section        favouriteName
+ */
+.favouriteName label {
+  display: none;
+}
+.favouriteName input {
+  border: none;
+}
+
+/**
+ * @section        Plugins
+ */
+/**
+ * @section        Helpers
+ */
+/**
+ * @section        Media
+ */
+/**
+ * @section        Development
+ */

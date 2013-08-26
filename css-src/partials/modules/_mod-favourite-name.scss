@@ -1,0 +1,30 @@
+/**
+ * @description    styling for the favouriteName class
+ *
+ *      @author    Kristina Auckland <kristina.auckland@gmail.com>
+ *     @version    0.1
+ *        @date    2013-08-26 17:48
+ *
+ *
+ *     @example
+ *                 <fieldset class="formField formInput formText favouriteName">
+ *                      <label class="formFieldLabel" for="favouriteNames_name_01">Name</label>
+ *                      <input type="email" name="favouriteNames_name_01" value="Anna" id="favouriteNames_name_01" />
+ *                 </fieldset>
+ *
+ *
+ *        @type    module
+ *       @notes
+ */
+
+/**
+ * @section        favouriteName
+ */
+.favouriteName {
+    label {
+        display: none;
+    }
+    input {
+        border: none;
+    }
+}

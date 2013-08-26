@@ -6,10 +6,90 @@
  *             @author    Kristina Auckland <kristina.auckland@gmail.com>
  *            @version    0.1
  *               @date    2013-08-18 18:10
+ *              @notes    NB. This is the master Sass file which imports all the partials.
+ *                        No CSS should be written in this file.
  */
 
-// * NB. This is the master Sass file which imports all the partials.
-// * No CSS should be written in this file.
+/*! Please be aware that styles.css is a generated file and has been built using SCSS */
 
-/** @section     Compass */
+/**
+ * @section        Compass
+ *   @notes        http://compass-style.org/install/
+ *                 $ sudo gem update --system
+ *                 $ sudo gem install compass
+ */
 @import "compass/css3";
+
+/**
+ * @section        Susy Grid
+ *   @notes        http://susy.oddbird.net/guides/
+ *                 $ sudo gem install susy
+ */
+@import "susy";
+
+/**
+ * @section        Sassy buttons
+ *   @notes        http://jaredhardy.com/sassy-buttons/
+ *                 $ sudo gem install modular-scale
+ */
+@import "sassy-buttons";
+
+/**
+ * @section        Settings
+ */
+@import "partials/settings/susy";
+
+/**
+ * @section        Variables
+ */
+@import "partials/variables/colour-palette";
+
+/**
+ * @section        Mixins
+ */
+
+/**
+ * @section        Global
+ */
+@include border-box-sizing;
+
+/**
+ * @section        Elements
+ */
+
+/**
+ * @section        Navigation
+ */
+
+/**
+ * @section        Modules
+ */
+@import "partials/modules/mod-form-field";
+@import "partials/modules/mod-form-field-label";
+@import "partials/modules/mod-form-input";
+@import "partials/modules/mod-favourite-name";
+
+ /**
+  * @section        Plugins
+  */
+ // @import "partials/plugins/XXXX";
+
+ /**
+  * @section        Helpers
+  */
+ // @import "partials/helpers/ir";
+ // @import "partials/helpers/hidden";
+ // @import "partials/helpers/invisible";
+ // @import "partials/helpers/clearfix";
+
+ /**
+  * @section        Media
+  */
+ // @import "partials/media/print";
+
+ /**
+  * @section        Development
+  */
+ // @import "partials/development/dev-debug";
+ // @import "partials/development/dev-layout";
+ // @import "partials/development/dev-style-guide";
