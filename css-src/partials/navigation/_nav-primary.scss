@@ -1,0 +1,35 @@
+/**
+ * @description    Styling for the primary navigation
+ *
+ *      @author    Kristina Auckland <kristina.auckland@gmail.com>
+ *     @version    0.1
+ *        @date    2013-09-09 15:33
+ *
+ *
+ *     @example
+ *                 <nav class="navPrimary">
+ *
+ *                 </nav>
+ *
+ *        @type    navigation
+ *       @notes
+ *
+ */
+
+/**
+ * @section        navPrimary
+ */
+.navPrimary {
+    background: $color-nav-primary-bg;
+    @extend %defaultBorder;
+    border-top: none;
+    a {
+        color: $color-white;
+        display: inline-block;
+        padding: 1em;
+        &:hover {
+            background: $color-white;
+            color: $color-nav-primary-bg;
+        }
+    }
+}

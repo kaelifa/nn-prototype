@@ -1,0 +1,27 @@
+/**
+ * @description    styling for the linkColor mixin
+ *
+ *      @author    Kristina Auckland <kristina.auckland@gmail.com>
+ *     @version    0.1
+ *        @date    2013-09-02 16:35
+ *
+ *
+ *     @example
+ *                 @include linkColor(#3cf);
+ *
+ *        @type    module
+ *       @notes
+ */
+
+/**
+ * @section        linkColor
+ */
+ @mixin linkColor($color) {
+      color: $color;
+
+      &:hover,
+      &:active,
+      &:focus {
+          color: lighten($color, 20%);
+      }
+ }

@@ -1,0 +1,35 @@
+/**
+ * @description    styling for the rating class
+ *
+ *      @author    Kristina Auckland <kristina.auckland@gmail.com>
+ *     @version    0.1
+ *        @date    2013-09-08 15:04
+ *
+ *
+ *     @example
+ *                 <div class="rating">
+ *                      <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+ *                 </div>
+ *
+ *
+ *        @type    module
+ *       @notes
+ */
+
+/**
+ * @section        rating
+ */
+.rating {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    > span {
+        display: inline-block;
+        position: relative;
+        width: 1.1em;
+        &:hover:before,
+        :hover ~ span:before {
+            content: "\2605";
+            position: absolute;
+        }
+    }
+}

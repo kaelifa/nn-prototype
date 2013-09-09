@@ -1,0 +1,23 @@
+/**
+ * @description    styling for the vendor prefix mixin
+ *
+ *      @author    Kristina Auckland <kristina.auckland@gmail.com>
+ *     @version    0.1
+ *        @date    2013-09-02 16:37
+ *
+ *
+ *     @example
+ *                 @include css3(transition, 0.5s);
+ *
+ *        @type    module
+ *       @notes
+ */
+
+/**
+ * @section        css3
+ */
+ @mixin css3($property, $value) {
+      @each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
+           #{$prefix}#{$property}: $value;
+      }
+ }

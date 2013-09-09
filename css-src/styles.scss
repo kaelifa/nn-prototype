@@ -13,61 +13,78 @@
 /*! Please be aware that styles.css is a generated file and has been built using SCSS */
 
 /**
- * @section        Compass
- *   @notes        http://compass-style.org/install/
- *                 $ sudo gem update --system
- *                 $ sudo gem install compass
+ * @section         Compass
+ *   @notes         http://compass-style.org/install/
+ *                  $ sudo gem update --system
+ *                  $ sudo gem install compass
  */
 @import "compass/css3";
 
 /**
- * @section        Susy Grid
- *   @notes        http://susy.oddbird.net/guides/
- *                 $ sudo gem install susy
+ * @section         Susy Grid
+ *   @notes         http://susy.oddbird.net/guides/
+ *                  $ sudo gem install susy
  */
 @import "susy";
 
 /**
- * @section        Sassy buttons
- *   @notes        http://jaredhardy.com/sassy-buttons/
- *                 $ sudo gem install modular-scale
+ * @section         Sassy buttons
+ *   @notes         http://jaredhardy.com/sassy-buttons/
+ *                  $ sudo gem install modular-scale
  */
 @import "sassy-buttons";
 
 /**
- * @section        Settings
+ * @section         Settings
  */
 @import "partials/settings/susy";
 
 /**
- * @section        Variables
+ * @section         Variables
  */
 @import "partials/variables/colour-palette";
 
 /**
- * @section        Mixins
+ * @section         Mixins
  */
+@import "partials/mixins/mix-font-stacks";
+@import "partials/mixins/mix-font-size";
+
+ /**
+  * @section        Placeholders
+  */
+@import "partials/placeholders/ph-border";
 
 /**
- * @section        Global
+ * @section         Global
  */
 @include border-box-sizing;
 
 /**
- * @section        Elements
+ * @section         Elements
  */
+ @import "partials/elements/body";
+ @import "partials/elements/nav";
+
+ /**
+  * @section        Layout
+  */
+@import "partials/layout/layout-wrapper";
 
 /**
- * @section        Navigation
+ * @section         Navigation
  */
+@import "partials/navigation/nav-primary";
 
 /**
- * @section        Modules
+ * @section         Modules
  */
+@import "partials/modules/mod-form-list-names";
 @import "partials/modules/mod-form-field";
 @import "partials/modules/mod-form-field-label";
 @import "partials/modules/mod-form-input";
-@import "partials/modules/mod-favourite-name";
+@import "partials/modules/mod-favourite-name-field";
+@import "partials/modules/mod-rating";
 
  /**
   * @section        Plugins

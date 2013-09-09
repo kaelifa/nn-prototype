@@ -10,23 +10,23 @@
  */
 /* Please be aware that styles.css is a generated file and has been built using SCSS */
 /**
- * @section        Compass
- *   @notes        http://compass-style.org/install/
- *                 $ sudo gem update --system
- *                 $ sudo gem install compass
+ * @section         Compass
+ *   @notes         http://compass-style.org/install/
+ *                  $ sudo gem update --system
+ *                  $ sudo gem install compass
  */
 /**
- * @section        Susy Grid
- *   @notes        http://susy.oddbird.net/guides/
- *                 $ sudo gem install susy
+ * @section         Susy Grid
+ *   @notes         http://susy.oddbird.net/guides/
+ *                  $ sudo gem install susy
  */
 /**
- * @section        Sassy buttons
- *   @notes        http://jaredhardy.com/sassy-buttons/
- *                 $ sudo gem install modular-scale
+ * @section         Sassy buttons
+ *   @notes         http://jaredhardy.com/sassy-buttons/
+ *                  $ sudo gem install modular-scale
  */
 /**
- * @section        Settings
+ * @section         Settings
  */
 /**
  * @description    Susy Settings - Set up your default grid values: total columns, column width, and gutter width.
@@ -73,29 +73,26 @@
  *   @notes        (min-width: 816px)
  */
 /**
- * @section        Variables
+ * @section         Variables
  */
 /**
  * @description    Colour palette
  *
  *      @author    Kristina Auckland <Kristina.Auckland@bss.org>
  *     @version    0.1
- *        @date    2013-05-14 09:57
+ *        @date    2013-09-08 15:27
  *
  *
  *     @example
  *
  *
  *        @type    variables
- *       @notes    All of the colours have been taken from the BSS Coporate Identity Style guide
+ *       @notes
  *      @ignore
  *
  */
 /**
 * @section        Base colours
-*/
-/**
-* @section        Corporate colours
 */
 /**
 * @section        Colour red
@@ -107,16 +104,7 @@
 * @section        Colour blue
 */
 /**
-* @section        Colour Pink
-*/
-/**
-* @section        Colour Yellow
-*/
-/**
-* @section        Colour Neutral
-*/
-/**
-* @section        Colour
+* @section        Other company brand colours
 */
 /**
 * @section        Colour complementary
@@ -125,10 +113,75 @@
 * @section        Colour
 */
 /**
- * @section        Mixins
+ * @section         Mixins
  */
 /**
- * @section        Global
+ * @description    font stack mixins
+ *
+ *      @author    Kristina Auckland <kristina.auckland@gmail.com>
+ *     @version    0.1
+ *        @date    2013-09-08 15:32
+ *
+ *
+ *     @example
+ *                 @include fontsize(12);
+ *
+ *        @type    mixin
+ *       @notes
+ *      @ignore
+ */
+/**
+ *     @section   default-font-stack
+ */
+/**
+ *     @section   headline-font-stack
+ */
+/**
+ * @description    font-sizing mixin
+ *
+ *      @author    http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
+ *     @version    0.1
+ *        @date    2013-09-08 15:35
+ *
+ *
+ *     @example    @include font-size(1.6);
+ *
+ *
+ *        @type    mixin
+ *       @notes    returns rem and fall-back px values
+ *      @ignore
+ */
+/**
+ * @section        font-size
+ */
+/**
+ * @section        Placeholders
+ */
+/**
+ * @description    defaultBorder placeholder
+ *
+ *      @author    Kristina Auckland <kristina.auckland@gmail.com>
+ *     @version    0.1
+ *        @date    2013-09-09 14:37
+ *
+ *
+ *     @example
+ *                 @extend %defaultBorder;
+ *
+ *        @type    placeholder
+ *       @notes
+ */
+/**
+ * @section        border
+ */
+.navPrimary, .formListNames {
+  border-color: #2db4d4;
+  border-style: solid;
+  border-width: 4px;
+}
+
+/**
+ * @section         Global
  */
 * {
   -webkit-box-sizing: border-box;
@@ -137,14 +190,165 @@
 }
 
 /**
- * @section        Elements
+ * @section         Elements
  */
 /**
- * @section        Navigation
+ * @description    Creates the default styling for the body element
+ *
+ *      @author    Kristina Auckland <kristina.auckland@gmail.com>
+ *     @version    0.1
+ *        @date    2013-09-08 15:30
+ *
+ *
+ *     @example
+ *                 <body>
+ *
+ *
+ *        @type    element
+ *       @notes
  */
 /**
- * @section        Modules
+ * @section        body
  */
+body {
+  background: white;
+  color: black;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/**
+ * @description    Styling for the nav element
+ *
+ *      @author    Kristina Auckland <kristina.auckland@gmail.com>
+ *     @version    0.1
+ *        @date    2013-09-09 18:24
+ *
+ *
+ *     @example
+ *                 <nav></nav>
+ *
+ *        @type    element
+ *       @notes
+ */
+/**
+ * @section        nav
+ */
+nav ul,
+nav ol,
+nav li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  text-decoration: none;
+}
+
+/**
+ * @section        Layout
+ */
+/**
+ * @description    Styling for the main layout wrapper
+ *
+ *      @author    Kristina Auckland <kristina.auckland@gmail.com>
+ *     @version    0.1
+ *        @date    2013-09-08 17:57
+ *
+ *
+ *     @example
+ *                 <div class="layoutWrapper">
+ *
+ *                 </div>
+ *
+ *
+ *        @type    layout
+ *       @notes
+ */
+/**
+ * @section        layoutWrapper
+ */
+.layoutWrapper {
+  *zoom: 1;
+  max-width: 71em;
+  _width: 71em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.layoutWrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/**
+ * @section         Navigation
+ */
+/**
+ * @description    Styling for the primary navigation
+ *
+ *      @author    Kristina Auckland <kristina.auckland@gmail.com>
+ *     @version    0.1
+ *        @date    2013-09-09 15:33
+ *
+ *
+ *     @example
+ *                 <nav class="navPrimary">
+ *
+ *                 </nav>
+ *
+ *        @type    navigation
+ *       @notes
+ *
+ */
+/**
+ * @section        navPrimary
+ */
+.navPrimary {
+  background: #2db4d4;
+  border-top: none;
+}
+.navPrimary a {
+  color: white;
+  display: inline-block;
+  padding: 1em;
+}
+.navPrimary a:hover {
+  background: white;
+  color: #2db4d4;
+}
+
+/**
+ * @section         Modules
+ */
+/**
+ * @description    styling for the formListNames class
+ *
+ *      @author    Kristina Auckland <kristina.auckland@gmail.com>
+ *     @version    0.1
+ *        @date    2013-09-09 14:33
+ *
+ *
+ *     @example
+ *                 <form class="formListNames">
+ *                 </form>
+ *
+ *
+ *        @type    module
+ *       @notes
+ */
+/**
+ * @section        formListNames
+ */
+.formListNames {
+  padding: 1em;
+}
+
 /**
  * @description    styling for the formField class
  *
@@ -209,8 +413,16 @@
 /**
  * @section        formInput
  */
+.formInput input,
+.formInput textarea {
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding: .33em;
+  width: 100%;
+}
+
 /**
- * @description    styling for the favouriteName class
+ * @description    styling for the favouriteNameField class
  *
  *      @author    Kristina Auckland <kristina.auckland@gmail.com>
  *     @version    0.1
@@ -218,7 +430,7 @@
  *
  *
  *     @example
- *                 <fieldset class="formField formInput formText favouriteName">
+ *                 <fieldset class="formField formInput formText favouriteNameField">
  *                      <label class="formFieldLabel" for="favouriteNames_name_01">Name</label>
  *                      <input type="email" name="favouriteNames_name_01" value="Anna" id="favouriteNames_name_01" />
  *                 </fieldset>
@@ -228,13 +440,48 @@
  *       @notes
  */
 /**
- * @section        favouriteName
+ * @section        favouriteNameField
  */
-.favouriteName label {
+.favouriteNameField label {
   display: none;
 }
-.favouriteName input {
+.favouriteNameField input {
   border: none;
+}
+
+/**
+ * @description    styling for the rating class
+ *
+ *      @author    Kristina Auckland <kristina.auckland@gmail.com>
+ *     @version    0.1
+ *        @date    2013-09-08 15:04
+ *
+ *
+ *     @example
+ *                 <div class="rating">
+ *                      <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+ *                 </div>
+ *
+ *
+ *        @type    module
+ *       @notes
+ */
+/**
+ * @section        rating
+ */
+.rating {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span :hover ~ span:before {
+  content: "\2605";
+  position: absolute;
 }
 
 /**

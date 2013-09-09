@@ -20,5 +20,10 @@
  * @section        formInput
  */
 .formInput {
-
+    input,
+    textarea {
+        @include font-size(1.4);
+        padding: .33em;
+        width: 100%;
+    }
 }

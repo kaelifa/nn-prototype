@@ -1,0 +1,23 @@
+/**
+ * @description    styling for the opacity mixin
+ *
+ *      @author    Kristina Auckland <kristina.auckland@gmail.com>
+ *     @version    0.1
+ *        @date    2013-09-02 16:38
+ *
+ *
+ *     @example
+ *                 @include opacity(0.5);
+ *
+ *        @type    module
+ *       @notes
+ */
+
+/**
+ * @section        opacity
+ */
+ @mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacityIE: $opacity * 100;
+    filter: alpha(opacity=$opacityIE);
+ }

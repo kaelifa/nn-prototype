@@ -1,0 +1,24 @@
+/**
+ * @description    styling for the formListNames class
+ *
+ *      @author    Kristina Auckland <kristina.auckland@gmail.com>
+ *     @version    0.1
+ *        @date    2013-09-09 14:33
+ *
+ *
+ *     @example
+ *                 <form class="formListNames">
+ *                 </form>
+ *
+ *
+ *        @type    module
+ *       @notes
+ */
+
+/**
+ * @section        formListNames
+ */
+.formListNames {
+    @extend %defaultBorder;
+    padding: 1em;
+}

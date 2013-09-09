@@ -1,0 +1,32 @@
+/**
+ * @description    styling for the imgRetina mixin
+ *
+ *      @author    Kristina Auckland <kristina.auckland@gmail.com>
+ *     @version    0.1
+ *        @date    2013-09-02 16:53
+ *
+ *
+ *     @example
+ *                 @include imgRetina(logo, png, 100px, 40px);
+ *
+ *        @type    module
+ *       @notes
+ */
+
+/**
+ * @section        imgRetina
+ */
+ @mixin imgRetina($image, $extension, $width, $height) {
+    background: url($image + '.' + $extension) no-repeat;
+    height: $height;
+    width: $width;
+
+    @media (min--moz-device-pixel-ratio: 1.3),
+        (-o-min-device-pixel-ratio: 2.6/2),
+        (-webkit-min-device-pixel-ratio: 1.3),
+        (min-device-pixel-ratio: 1.3),
+        (min-resolution: 1.3dppx) {
+            background-image: url($image + '-2x' + '.' + $extension) no-repeat;
+            background-size: $width $height;
+        }
+ }

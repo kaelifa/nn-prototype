@@ -3,35 +3,15 @@ layout: default
 title: namenam.es
 ---
 
-<form class="formFavouriteNames">
-	<legend>Your favourite names</legend>
+<form class="formListNames">
+	<legend>Favourite names</legend>
 
-	<div class="formErrorList">
+	<!-- <div class="formErrorList">
 		<p>There are (x) error(s) in the form</p>
 		<ol>
 			<li>Please add a name</li>
 		</ol>
-	</div>
-
-	<fieldset class="formField formInput formText favouriteName">
-		<label class="formFieldLabel" for="favouriteNames_name_01">Name</label>
-		<input type="email" name="favouriteNames_name_01" value="Anna" id="favouriteNames_name_01" />
-	</fieldset>
-
-	<fieldset class="formField formInput formText favouriteName">
-		<label class="formFieldLabel" for="favouriteNames_name_02">Name</label>
-		<input type="email" name="favouriteNames_name_02" value="Banna" id="favouriteNames_name_02" />
-	</fieldset>
-
-	<fieldset class="formField formInput formText favouriteName">
-		<label class="formFieldLabel" for="favouriteNames_name_03">Name</label>
-		<input type="email" name="favouriteNames_name_03" value="Canna" id="favouriteNames_name_03" />
-	</fieldset>
-
-	<fieldset class="formField formInput formText favouriteName">
-		<label class="formFieldLabel" for="favouriteNames_name_04">Name</label>
-		<input type="email" name="favouriteNames_name_04" value="Danna" id="favouriteNames_name_04" />
-	</fieldset>
+	</div> -->
 
 	<fieldset class="formField formInput formText">
 		<label class="formFieldLabel" for="favouriteNames_add_name">Name</label>
@@ -39,6 +19,31 @@ title: namenam.es
 	</fieldset>
 
 	<div class="formField formSubmit">
-		<input type="submit" class="button" value="Add name" />
+		<input type="submit" class="button" value="Add" />
 	</div>
+
+	<fieldset class="formField formInput formText favouriteNameField">
+		<label class="formFieldLabel" for="favouriteNames_name_01">Name</label>
+		<input type="email" name="favouriteNames_name_01" value="Anna" id="favouriteNames_name_01" />
+		{% include rating.html %}
+	</fieldset>
+
+	<fieldset class="formField formInput formText favouriteNameField">
+		<label class="formFieldLabel" for="favouriteNames_name_02">Name</label>
+		<input type="email" name="favouriteNames_name_02" value="Banna" id="favouriteNames_name_02" />
+		{% include rating.html %}
+	</fieldset>
+
+	<fieldset class="formField formInput formText favouriteNameField">
+		<label class="formFieldLabel" for="favouriteNames_name_03">Name</label>
+		<input type="email" name="favouriteNames_name_03" value="Canna" id="favouriteNames_name_03" />
+		{% include rating.html %}
+	</fieldset>
+
+	<fieldset class="formField formInput formText favouriteNameField">
+		<label class="formFieldLabel" for="favouriteNames_name_04">Name</label>
+		<input type="email" name="favouriteNames_name_04" value="Danna" id="favouriteNames_name_04" />
+		{% include rating.html %}
+	</fieldset>
+
 </form>

@@ -1,5 +1,5 @@
 /**
- * @description    styling for the favouriteName class
+ * @description    styling for the favouriteNameField class
  *
  *      @author    Kristina Auckland <kristina.auckland@gmail.com>
  *     @version    0.1
@@ -7,7 +7,7 @@
  *
  *
  *     @example
- *                 <fieldset class="formField formInput formText favouriteName">
+ *                 <fieldset class="formField formInput formText favouriteNameField">
  *                      <label class="formFieldLabel" for="favouriteNames_name_01">Name</label>
  *                      <input type="email" name="favouriteNames_name_01" value="Anna" id="favouriteNames_name_01" />
  *                 </fieldset>
@@ -18,9 +18,9 @@
  */
 
 /**
- * @section        favouriteName
+ * @section        favouriteNameField
  */
-.favouriteName {
+.favouriteNameField {
     label {
         display: none;
     }
